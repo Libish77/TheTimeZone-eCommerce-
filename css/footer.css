@@ -1,0 +1,39 @@
+/* Styling footer  */
+
+footer {
+    display: flex;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    padding: 40px;
+    color: wheat;
+  }
+
+  footer .footer-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  footer a {
+    color: wheat;
+  }
+  
+  footer a:hover {
+    color: wheat;
+  }
+  
+  footer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  footer h2{
+    margin-bottom: 4px;
+    font-size: 1.3rem;
+  }
+
+  footer .social-link{
+    font-size: 20px;
+  }

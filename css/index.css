@@ -1,0 +1,125 @@
+/* Styling the index page */
+
+/* Styyling the banner-1 */
+.banner-1{
+    margin-top: 15px;
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+
+/* Styyling the banner-2 */
+.banner-2{
+    margin-top: 25px;
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    flex-direction: column;
+}
+
+/* Styling for the main heading in the banner-2 section */
+.banner-2 .banner-2Content h2 {
+    font-size: 3.2rem;
+    position: relative;
+    margin-bottom: 7px;
+    text-align: center;
+  }
+  
+  /* Styling for the span element inside the banner-2 section */
+  .banner-2 .banner-2Content h2  span {
+    color: yellowgreen;
+    font-size: 3.2rem;
+  }
+  
+  /* Styling for the paragraph text in the banner-2 section  */
+  .banner-2 .banner-2Content p {
+    text-align: center;
+    line-height: 20px;
+    font-size: 3rem;
+    margin-bottom:5px;
+    font-family: unset;
+  }
+
+/* Styling for the button in the banner-2 section  */
+.banner-2 .main-button {
+    background: yellowgreen;
+    position: relative;
+    width: 150px;
+    cursor: pointer;
+    padding: 12px 25px;
+    border-radius: 5px;
+    margin: auto;
+  }
+  
+  /* Styling for the link inside the button */
+  .banner-2 .main-button a {
+    color: black;
+    margin-right: 5px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  /* Styling for the icon inside the button */
+  .banner-2 .main-button i {
+    color: #fff;
+    transition: 0.3s;
+  }
+  
+  /* Styling for the icon on button hover */
+  .banner-2 .main-button:hover i {
+    transform: translateX(7px);
+  }
+/* Styyling the banner-3 section */
+  .banner-3{
+    margin-top: 25px;
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    flex-direction: column;
+}
+/* Styling for the main heading in the banner-3 section */
+.banner-3 .banner-3Content h2 {
+    font-size: 3.2rem;
+    position: relative;
+    margin-bottom: 7px;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  
+  /* Styling for the span element inside the banner-3 section */
+  .banner-3 .banner-3Content h2  span {
+    color: yellowgreen;
+    font-size: 3.2rem;
+  }
+  
+
+/* Styling for the button in the banner-3 section */
+.banner-3 .main-button {
+    background: yellowgreen;
+    position: relative;
+    width: 150px;
+    cursor: pointer;
+    padding: 12px 25px;
+    border-radius: 5px;
+    margin: auto;
+    margin-bottom: 5px;
+  }
+  
+  /* Styling for the link inside the button */
+  .banner-3 .main-button a {
+    color: black;
+    margin-right: 5px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  /* Styling for the icon inside the button */
+  .banner-3 .main-button i {
+    color: #fff;
+    transition: 0.3s;
+  }
+  
+  /* Styling for the icon on button hover */
+  .banner-3 .main-button:hover i {
+    transform: translateX(7px);
+  }
