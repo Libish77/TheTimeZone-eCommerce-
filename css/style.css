@@ -1,0 +1,271 @@
+html {
+    font-size: 62.5%; /* default screen above laptop */
+    scroll-behavior: smooth;
+    font-family: "Playfair Display", serif;
+  
+  }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    list-style-type: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--main);
+    transition: linear;
+  }
+  
+  
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+
+
+header {
+    font-size: 1.55 rem;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    padding: 8px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    z-index: 101; /* Add a high z-index to ensure the header is on top */
+    background-color: white; /* Set the background color if needed */
+    transition: top 1s ease;
+  }
+    
+  .header-first {
+    padding: 8px 0px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  .hamburger-menu {
+    width: 30%;
+    display: none;
+    cursor: pointer;
+  }
+  
+  .logo h1 {
+    color: black;
+    font-family: "Bungee", cursive;
+    letter-spacing: 12px;
+  }
+  
+  .logo h1:hover {
+    color: pink;
+  }
+  
+  .user-login {
+    justify-content: center;
+    font-size: 2.5rem;
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    gap: 10px;;
+  }
+
+  .user-login ul{
+    display: flex;
+  }
+  
+ 
+
+  .user-login li:not(:last-child) {
+    padding-right: 10px;
+  }
+  .user-login li:not(:last-child):hover {
+    color:pink;
+  }
+  .user-login li:not(:first-child):hover {
+    color:pink;
+  }
+  .user-login li:not(:first-child) {
+    padding-left: 10px;
+  }
+  .user-login ul li:not(:last-child) {
+    border-right: 1px solid black;
+  }
+  
+  .header-first::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    border-top: 1px solid black;
+  }
+  
+  .header-second ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .nav-bar {
+    width: 80%;
+  }
+  
+  .nav-bar ul li {
+    font-size: 1.8rem;
+  }
+  
+  .nav-bar ul li:hover {
+    transform: scale(1.4);
+  }
+  
+  /* cart item styling */
+  .shopCart {
+    position: relative;
+  }
+  .cartItem {
+    left: 16px;
+    padding: 6px;
+    border-radius: 50%;
+    position: absolute;
+    font-size: 16px;
+    top: -13px;
+    font-weight: 300;
+  }
+  
+  /* Breakpoint */
+  @media only screen and (max-width: 1340px) {
+   
+  }
+  
+  /* Tablet PHONES */
+  @media only screen and (max-width: 1199px) {
+    .container {
+      width: 100%;
+    }
+  
+    .hamburger-menu {
+      width: 20%;
+    }
+    header {
+      padding: 0;
+    }
+  
+    .header-fixed {
+      top: 0;
+    }
+    .social-links {
+      display: none !important;
+    }
+  
+    .user-login li:not(:first-child) {
+      padding-left: 0;
+    }
+  
+    .hamburger-menu {
+      align-self: center;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+  
+    .header-first {
+      position: relative;
+      justify-content: space-between !important;
+    }
+  
+    .header-second {
+      background-color: inherit;
+      width: 100%;
+      display: none;
+      position: absolute;
+      overflow: hidden;
+      opacity: 0;
+    }
+  
+    .show {
+      display: block;
+      opacity: 1;
+      transition: display 0.4s ease;
+    }
+  
+    nav {
+      padding: 0;
+    }
+  
+    .nav-bar ul {
+      flex-direction: column;
+    }
+  
+    .nav-bar ul li {
+      padding: 10px 0;
+      text-align: center;
+      border-bottom: 1px solid wheat;
+    }
+  
+    .bar {
+      align-self: center;
+      width: 30px;
+      height: 4px;
+      background-color: wheat;
+      margin: 4px 0;
+      border-radius: 50px;
+      cursor: pointer;
+    }
+  
+    .hamburger-menu:hover .bar {
+      background-color: black;
+    }
+  
+  
+  }
+  
+  /* MOBILE PHONES */
+  @media only screen and (max-width: 767px) {
+    .banner {
+      height: 50vh;
+    }
+  
+    .banner-description {
+      transform: translate(10%, 10%);
+    }
+  
+    .logo {
+      padding-left: 40px;
+      width: 60%;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .user-login {
+      width: 25%;
+      position: relative;
+    }
+  
+    .user-login .username {
+      position: absolute;
+      top: -22px;
+      left: -22px;
+      z-index: 1000000;
+    }
+  
+    .offer-desc {
+      line-height: 30px !important;
+    }
+  }
+  

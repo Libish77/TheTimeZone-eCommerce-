@@ -1,42 +1,82 @@
-<!-- <<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-  <link rel="stylesheet" href="/css/jQueryForms.css">
-
- -->
-
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/additional-methods.min.js"></script>
-  <script src="js/jQFormsRegister.js"></script>
-  <link rel="stylesheet" type="text/css" href="css/jQForms.css">
-  <title>jQueryForms</title>
-</head>
-<body>
-  <form id="registration-form" action="php/jQFormsAddUser.php" method="post">
-    <label for="firstname">First Name:</label>
-    <input type="text" id="firstname" name="firstname"><br>
-    <label for="lastname">Last Name:</label>
-    <input type="text" id="lastname" name="lastname"><br>
-    <label for="username">Username:</label>
-    <input type="text" id="username" name="username"><br>
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password"><br>
-    <label for="confirmPassword">Confirm Password:</label>
-    <input type="password" id="confirmPassword" name="confirmPassword"><br>
-    <input type="submit" value="Register">
-  </form>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - TheTimeZone</title>
+    <link rel="stylesheet"href="css/style.css">
+    <!-- Fontawesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-first">
+          <div class="hamburger-menu" id="hamburgerMenu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+  
+          <div class="logo">
+            <a href="index.html"><h1>TheTimeZone</h1></a>
+          </div>
+          <div class="user-login">
+            <ul>
+              <li>
+                <a href="./html/profile.php">
+                  <span id="#show-option" class="username"></span>
+                  <i class="fa-solid fa-user" title="Profile/Login"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i
+                    id="#show-option"
+                    class="fa-solid fa-bag-shopping shopCart"
+                    title="Your Cart"
+                  >
+                    <span class="cartItem"></span></i
+                ></a>
+              </li>
+            </ul>
+  
+         
+          </div>
+        </div>
+      </div>
+  
+      <div class="header-second">
+        <nav>
+          <div class="container nav-bar">
+            <ul>
+              <li>
+                Products
+              </li>
+              <li>
+                Products
+              </li>
+              <li>
+               Products
+              </li>
+              <li>
+                Products
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
 
-	<p>Have an account? <a href="html/login.html">Login now</a></p>
-
-</body>
+  </body>
 </html>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+  $(function(){
+    $(".hamburger-menu").click(function () {
+    $(".header-second").toggleClass("show");
+  });
+  })
+</script>
