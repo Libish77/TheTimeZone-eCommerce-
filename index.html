@@ -1,0 +1,42 @@
+<!-- <<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="/css/jQueryForms.css">
+
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/additional-methods.min.js"></script>
+  <script src="js/jQFormsRegister.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/jQForms.css">
+  <title>jQueryForms</title>
+</head>
+<body>
+  <form id="registration-form" action="php/jQFormsAddUser.php" method="post">
+    <label for="firstname">First Name:</label>
+    <input type="text" id="firstname" name="firstname"><br>
+    <label for="lastname">Last Name:</label>
+    <input type="text" id="lastname" name="lastname"><br>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username"><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password"><br>
+    <label for="confirmPassword">Confirm Password:</label>
+    <input type="password" id="confirmPassword" name="confirmPassword"><br>
+    <input type="submit" value="Register">
+  </form>
+
+	<p>Have an account? <a href="html/login.html">Login now</a></p>
+
+</body>
+</html>
+

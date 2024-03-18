@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Logged In</title>
+  </head>
+  <body>
+    <?php 
+      // Start the session
+      session_start();
+    ?>
+    <h1>You are now logged in!</h1>
+    <p>Welcome, <?php echo $_SESSION['username']; ?>.</p>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="../js/jQFormsLogin.js""></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/additional-methods.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/jQForms.css">
+	<title>Login Page</title>
+</head>
+<body>
+	<h1>Login</h1>
+	<form id="login-form" action="../php/jQFormsLogin.php" method="post">
+		<label for="username">Username:</label>
+		<input type="text" id="username" name="username" required><br>
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password" required><br>
+		<input type="submit" value="Login">
+	</form>
+	<p>Have an account? <a href="login.html">Login now</a></p>
+</body>
+</html>
