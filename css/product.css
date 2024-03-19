@@ -1,0 +1,83 @@
+/* Container holding the image and the text */
+.banner-1{
+    position: relative;
+    text-align: center;
+    color: black;
+    overflow: hidden;
+    margin-bottom: 5px  ;
+}
+
+.banner-1 img {
+    -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
+    filter: blur(5px);
+  }
+  
+.banner-1 .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+.banner-1 .centered h2{
+    font-size: 3rem;
+    color: yellowgreen;
+    text-align: center;
+
+  }
+.banner-1 .centered h2 span{
+    font-size: 3rem;
+    color: whitesmoke;
+    text-align: center;
+  }
+
+.banner-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    margin-bottom: 5px;
+  }
+.banner-2 img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: whitesmoke;
+}
+.clock-details{
+    display: flex;
+    flex-direction: column;
+    background: whitesmoke;
+    text-align:center;
+}
+.clock-details h5{
+    text-align:center;
+    font-size:1rem;
+}
+.clock-details h4{
+    text-align:center;
+    font-size:1.3rem;
+}
+.clock-details h4:hover{
+    color: yellowgreen;
+    cursor: pointer;
+}
+
+/* Media Query for Tablet Viewport */
+
+/* Adjust gallery layout for tablets to have two columns instead of three and resize font and image descriptions. */
+  
+@media (max-width: 768px) {
+    .banner-2  {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+/* Media Query for Mobile Viewport */
+
+/* Adjust gallery layout for mobile devices to have one column and resize font and image descriptions further. */
+
+  @media (max-width: 480px) {
+    .banner-2  {
+      grid-template-columns: 1fr 1fr;
+    }
+  }

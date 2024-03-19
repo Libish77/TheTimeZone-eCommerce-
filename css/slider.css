@@ -7,7 +7,7 @@
 
 .kai_banner_container .kai_banner_body {
   white-space: nowrap;
-  word-space: -4px;
+  /* word-space: -4px; */
   letter-spacing: -6px;
   position: relative;
 }

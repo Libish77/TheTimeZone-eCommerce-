@@ -11,15 +11,18 @@
     <link rel="stylesheet"href="css/footer.css">
 
     <!-- Fontawesome Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+    <!-- jquery plugins for a slider -->
+
+      <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" rel="stylesheet" type="text/css">
   </head>
 
-    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" rel="stylesheet" type="text/css">
+    
     
   <body>
+    <!-- header starts here -->
     <header>
       <div class="container">
         <div class="header-first">
@@ -66,7 +69,7 @@
           <div class="container nav-bar">
             <ul>
               <li>
-                Products
+                <a href="html/products.html">Products</a>
               </li>
               <li>
                 Products
@@ -82,15 +85,19 @@
         </nav>
       </div>
     </header>
+    <!-- header ends here -->
+    <!-- Main Content starts here-->
     <main>
         <!-- slider Section -->
         <div class="container">
+          <!-- jquery plugin used here for a slider.
+             link : https://www.jqueryscript.net/slider/Elegant-Banner-Slider-Carousel-Plugin-jQuery-kaiBanner.html-->
         <div class="kai_banner_container clearfix">
           <div class="kai_banner_body clearfix">
-            <a href=""><img src="img/slider1.jpeg" class="responsiveImage"></a>
-            <a href=""><img src="img/slider2.jpeg" class="responsiveImage"></a>
-            <a href=""><img src="img/slider3.jpeg" class="responsiveImage"></a>
-            <a href=""><img src="img/slider4.jpeg" class="responsiveImage"></a>
+            <a href="html/products.html"><img src="img/slider1.jpeg" class="responsiveImage"></a>
+            <a href="html/products.html"><img src="img/slider2.jpeg" class="responsiveImage"></a>
+            <a href="html/products.html"><img src="img/slider3.jpeg" class="responsiveImage"></a>
+            <a href="html/products.html"><img src="img/slider4.jpeg" class="responsiveImage"></a>
           </div>
           
           <div class="kai_banner_prevbtn side_btn"></div>
@@ -118,7 +125,7 @@
             </p>
           </div>
           <div class="main-button">
-            <a href="products.html"> DISCOVER </a>
+            <a href="html/products.html"> DISCOVER </a>
           </div>
             
         
@@ -134,13 +141,15 @@
             <h2>CHRONOMAT36 <span>DAVID BECKHAM</span></h2>
           </div>
           <div class="main-button">
-            <a href="products.html"> DISCOVER </a>
+            <a href="html/products.html"> DISCOVER </a>
           </div>
             
         </section>
         
       </div>
     </main>
+    <!-- Main Content ends here-->
+    <!-- Footer starts here-->
     <footer>
       <section class="footer-links">
         <div class="location-footer">
@@ -192,49 +201,11 @@
         </div>
       </section>
     </footer>
+    <!-- Footer ends here-->
   </body>
 </html>
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="lib/jquery.kaibanner.js"></script>
-<script type="text/javascript">
+<script type="text/javascript" src="js/slider.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
 
-	$('.kai_banner_container').kaiBanner({
-		minWidth:1200,
-		intervalTime:2000,
-		highlightClass:'highlight'
-	});
-
-	$('.kai_banner2_container').kaiBanner();
-
-	$('.kai_banner3_container').kaiBanner({
-		speed:1000,
-		intervalTime:3000,
-		fixedWidth:true,
-		minWidth:980,
-		highlightClass:'highlight'
-	});
-
-
-
-</script>
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-36251023-1']);
-  _gaq.push(['_setDomainName', 'jqueryscript.net']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-<script>
-  $(function(){
-    $(".hamburger-menu").click(function () {
-    $(".header-second").toggleClass("show");
-  });
-  })
-</script>
