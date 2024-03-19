@@ -37,6 +37,10 @@
     grid-gap: 10px;
     margin-bottom: 5px;
   }
+
+.products{
+    display: contents;
+}
 .banner-2 img{
     display: flex;
     align-items: center;
