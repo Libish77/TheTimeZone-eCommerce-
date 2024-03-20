@@ -30,15 +30,16 @@ function renderProduct(product) {
 function attachProductClickListeners() {
     const items = document.querySelectorAll(".card");
     items.forEach((item) => {
-      item.addEventListener("click", openProductPage);
+      item.addEventListener("click", productDetails);
     });
 }
 // Function to handle product click
-function openProductPage(event) {
+function productDetails(event) {
     debugger;
     const productId = event.currentTarget.dataset.productId;
     alert(productId);
-    // window.location.href = `./singleProduct.html?id=${productId}`;
+    window.location.href = `./productDetails.html?id=${productId}`;
 }
 
+// calling a function renderAllProducts when page load
 renderAllProducts();

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - TheTimeZone</title>
+    <link rel="stylesheet"href="../css/style.css">
+    <link rel="stylesheet"href="../css/header.css">
+    <link rel="stylesheet"href="../css/footer.css">
+    <link rel="stylesheet"href="../css/productDetail.css">
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https:/resources/demos/style.css">
+
+    <!-- Fontawesome Icons -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+      
+    
+  </head>
+
+    
+    
+  <body>
+    <!-- header starts here -->
+    <header>
+      <div class="container">
+        <div class="header-first">
+          <div class="hamburger-menu" id="hamburgerMenu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+  
+          <div class="logo">
+            <a href="index.html"><h1>TheTimeZone</h1></a>
+          </div>
+          <div class="search-bar">
+            <input type="text" placeholder="Search..">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          </div>
+          <div class="user-login">
+            <ul>
+              <li>
+                <a href="./html/profile.php">
+                  <span id="#show-option" class="username"></span>
+                  <i class="fa-solid fa-user" title="Profile/Login"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i
+                    id="#show-option"
+                    class="fa-solid fa-bag-shopping shopCart"
+                    title="Your Cart"
+                  >
+                    <span class="cartItem"></span></i
+                ></a>
+              </li>
+            </ul>
+  
+         
+          </div>
+        </div>
+      </div>
+  
+      <div class="header-second">
+        <nav>
+          <div class="container nav-bar">
+            <ul>
+              <li>
+                Products
+              </li>
+              <li>
+                Products
+              </li>
+              <li>
+               Products
+              </li>
+              <li>
+                Products
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- header ends here -->
+
+    <!-- main starts here -->
+    <main class="content-wrapper">
+      <section class="container">
+        <div class="product">
+          <div class="product-image">
+            <img src="../media/img/p1.jpeg" alt="Avatar" class="responsiveImage">
+          </div>
+          <div class="product-description">
+            <h4 class="product-code"> A103801A1L1A1</h4> 
+            <h2 class="product-name"><b> Chronomat Automatic 36 Victoria Beckham</b></h2> 
+            <p class="product-desc"> Chronomat Automatic 36 Victoria Beckham Chronomat Automatic 36 Victoria Beckham</p> 
+            <div class="product-price">
+               <p>CAD 4000</p>
+            </div>
+            <div class="product-feature">
+              <h4>Other Features</h4>
+           </div>
+
+              <div class="feature-list">
+                <ul>
+                  <li>water resistant</li>
+                  <li>water resistant</li>
+                  <li>water resistant</li>
+                </ul>
+                <ul>
+                  <li>water resistant</li>
+                  <li>water resistant</li>
+                  <li>water resistant</li>
+                </ul>
+                <ul>
+                  <li>water resistant</li>
+                  <li>water resistant</li>
+                  <li>water resistant</li>
+                </ul>
+              </div>
+              <div class="cart-button">
+                <button id="button" class="cart-btn">Add To Cart</button>
+              </div>
+              <div class="remaining-product">
+                <p>Remaining : 2 pcs only</p>
+              </div>
+          </div>
+          
+        </div>
+      </section>
+      <section class="container">
+
+      <!-- jquery widgets (accordion) -->
+      <div id="accordion" class="accordion">
+        <h3>Section 1</h3>
+        <div>
+          <p>
+          Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+          ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+          amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+          odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+          </p>
+        </div>
+        <h3>Section 2</h3>
+        <div>
+          <p>
+          Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+          purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+          velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+          suscipit faucibus urna.
+          </p>
+        </div>
+        <h3>Section 3</h3>
+        <div>
+          <p>
+          Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+          Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+          ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+          lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+          </p>
+          <ul>
+            <li>List item one</li>
+            <li>List item two</li>
+            <li>List item three</li>
+          </ul>
+        </div>
+        <h3>Section 4</h3>
+        <div>
+          <p>
+          Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+          et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+          faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+          mauris vel est.
+          </p>
+          <p>
+          Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+          Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+          inceptos himenaeos.
+          </p>
+        </div>
+      </div>
+      </section>
+    </main>
+    <!-- main ends here -->
+    <!-- Footer starts here-->
+    <footer>
+        <section class="footer-links">
+        <div class="location-footer">
+            <h2>Location</h2>
+            <ul>
+            <li><a href="#">USA</a></li>
+            <li><a href="#">CANADA</a></li>
+            <li><a href="#">NEPAL</a></li>
+            <li></li>
+            </ul>
+        </div>
+
+        <div class="shop-footer">
+            <h2>SHOP</h2>
+            <ul>
+            <li><a href="#">Collections</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">New</a></li>
+            </ul>
+        </div>
+
+        <div class="customer-footer">
+            <h2>CUSTOMER SERVICE</h2>
+            <ul>
+            <li><a href="#">My Account</a></li>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="social-link">
+            <ul>
+            <li>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </li>
+            </ul>
+        </div>
+        </section>
+    </footer>
+    <!-- Footer ends here-->
+</body>
+</html>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="../js/script.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#accordion" ).accordion();
+  } );
+</script>

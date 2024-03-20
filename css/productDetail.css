@@ -1,0 +1,135 @@
+.product{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    margin: auto;
+    height: fit-content;
+    width: 80%;
+    overflow: hidden;
+}
+
+.product-image{
+    display: block;
+    width: 400px;
+    height: 100%;
+}
+
+.product-description{
+    margin-top: 136px;
+    text-align: left;
+    width: 100%;
+}
+
+.product-code{
+    text-align: left;
+    color: darkslategray;
+}
+
+.product-name{
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+.product-desc{
+    font-size: 1.2rem;
+    text-align: left;
+}
+.product-price{
+    font-size: 2.5rem;
+    margin-top: 15px;
+    font-weight: 600;
+    font-family: cursive;
+}
+.product-feature{
+    font-size: 3rem;
+    text-align: left;
+    margin-left: 15px;
+    color: cadetblue;
+    margin-top: 10px;
+}
+.feature-list{
+    display: flex;
+    flex-direction: row;
+}
+.feature-list ul{
+    padding: 4px;
+}
+.feature-list ul li {
+    text-align: center;
+    font-size: 2rem;
+    font-family: cursive;
+    font-weight: 500;
+    padding: 5px;
+}
+.cart-button{
+    margin: auto;
+    text-align: center;
+    padding: 5px;
+}
+.cart-btn{
+    text-decoration: none;
+    /* color: #fff; */
+    /* font-size: 20px; */
+    background: greenyellow;
+    line-height: 1.42;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    padding: 1.1rem 2rem;
+    width: auto;
+    min-width: 9rem;
+    cursor: pointer;
+    border: 0.1rem solid transparent;
+    border-radius: 0.3rem;
+}
+.remaining-product{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.accordion .ui-state-active{
+    background-color: greenyellow;
+}
+/* Media Query for Tablet Viewport */
+
+/* Adjust gallery layout for tablets to have two columns instead of three and resize font and image descriptions. */
+  
+@media (max-width: 768px) {
+    .product {
+        grid-template-columns: 1fr ;
+        width: 100%;
+      }
+    .product-image{
+        display: block;
+        width: 200px;
+        height: auto;
+        margin-left: 103px;
+    }
+    .product-description{
+        margin-top: -33px;
+        text-align: center;
+    }
+  }
+
+/* Media Query for Mobile Viewport */
+
+/* Adjust gallery layout for mobile devices to have one column and resize font and image descriptions further. */
+
+  @media (max-width: 480px) {
+    .product {
+        grid-template-columns: 1fr ;
+        width: 100%;
+      }
+    .product-image{
+        display: block;
+        width: 200px;
+        height: auto;
+        margin-left: 103px;
+    }
+    .product-description{
+        margin-top: -33px;
+        text-align: center;
+    }
+  }

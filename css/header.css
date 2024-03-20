@@ -40,13 +40,21 @@ header {
     width: 30%;
     display: flex;
     flex-direction: row;
+    position: relative;
+    display: block;
 }
 .search-bar input[type=text] {
     padding: 6px;
     font-size: 17px;
     border-radius: 5px;
+    width:100%;
+    display: block;
   }
-
+.search-icon {
+  position: absolute;
+  top: 10%;
+  margin-left: 370px;
+}
   .user-login {
     justify-content: center;
     font-size: 2.5rem;
