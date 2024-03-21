@@ -44,7 +44,7 @@ function getProductById(productId) {
                 <button id="button" class="cart-btn">${productDetails.button_text}</button>
               </div>
               <div class="remaining-product">
-                <p>Remaining : ${productDetails.quantity} pcs only</p>
+                <p>Remaining :<span class="product-quantity"> ${productDetails.quantity} </span> pcs only</p>
               </div>
           </div>
           
@@ -74,6 +74,7 @@ function getProductById(productId) {
       </div>
       </section>
     `;
+    return productDetails;
   }
 
   
@@ -84,6 +85,55 @@ const urlParams = new URLSearchParams(queryString);
 const productId = urlParams.get('id');
 
 // function call to load product details
-getProductById(productId);
+let productDetails = getProductById(productId);
 
+// Function to add a product to the cart
+function addToCart(productId) {
+  debugger;
+  let cartItem = document.querySelector(".cartItem");
+  let existingItem = 0;
+
+  //check if there is product in cart or not
+  if(cartItem.innerHTML != ""){
+    existingItem = parseInt(cartItem.innerHTML);
+  }
+
+  //update the product quantity and update the display in UI
+  let prod_qty = document.querySelector(".remaining-product");
+  let product_qty = document.querySelector(".product-quantity");
+  let total_items = productDetails.quantity;
+
+  let remaining_items = productDetails.quantity;
+
+  if(total_items <= 0)
+  {
+    prod_qty.innerHTML="Out of stock";
+    prod_qty.style.color = "red";
+  }
+  else{
+    existingItem = existingItem + 1;
+    total_items = total_items - 1;
+    productDetails.quantity = total_items;
+    if(total_items <= 0)
+    {
+      prod_qty.innerHTML="Out of stock";
+      prod_qty.style.color = "red";
+    }
+    else{
+      product_qty.textContent = total_items;
+    }
+    cartItem.textContent = existingItem;
+
+  }
+}
+
+document.querySelector(".cart-btn").addEventListener('click', function(){
+ //getting product id from the url
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  const productId = urlParams.get('id');
+
+  // Call the addToCart function with the product ID to add it to the cart
+  addToCart(productId);
+});
 

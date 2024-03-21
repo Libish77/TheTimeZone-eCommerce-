@@ -39,7 +39,7 @@
     line-height: 20px;
     font-size: 3rem;
     margin-bottom:5px;
-    font-family: unset;
+    font-family: sans-serif;
   }
 
 /* Styling for the button in the banner-2 section  */
@@ -125,3 +125,41 @@
   .banner-3 .main-button:hover i {
     transform: translateX(7px);
   }
+  .feature-product h2{
+    text-align: center;
+    font-size: 2rem;
+    width: 100%;
+  }
+
+  .banner-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    margin-bottom: 5px;
+  }
+ 
+
+.banner-4 img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: whitesmoke;
+}
+.clock-details{
+    display: flex;
+    flex-direction: column;
+    background: whitesmoke;
+    text-align:center;
+}
+.clock-details h5{
+    text-align:center;
+    font-size:1rem;
+}
+.clock-details h4{
+    text-align:center;
+    font-size:1.3rem;
+}
+.clock-details h4:hover{
+    color: yellowgreen;
+    cursor: pointer;
+}

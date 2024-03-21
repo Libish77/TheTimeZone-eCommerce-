@@ -3,6 +3,7 @@ const clockList = [
       "id": 1,
       "code":"A103801A1L1A1",
       "location": "./media/img/p1.jpeg",
+      "featureLocation": "/media/img/p1.jpeg",
       "title": "Classic Shinola002",
       "shipping": "Free standard domestic shipping on all orders. International shipping rates vary.",
       "return": "30-day return policy for unused and unworn items. Some exclusions apply.",
@@ -22,12 +23,14 @@ const clockList = [
       "color": "black",
       "width": "20 mm",
       "height": "10 mm",
-      "quantity": 8
+      "quantity": 2,
+      "isFeatured": true
     },
     {
       "id": 2,
       "code":"A103801A1L1A2",
       "location": "./media/img/p2.jpeg",
+      "featureLocation": "/media/img/p2.jpeg",
       "title": "Weekender Chronograph",
       "shipping": "Free shipping on orders over $50. Additional charges may apply for international shipping.",
       "return": "Easy 30-day returns for unused items.",
@@ -47,7 +50,8 @@ const clockList = [
       "color": "blue",
       "width": "20 mm",
       "height": "12 mm",
-      "quantity": 10
+      "quantity": 1,
+      "isFeatured": true
     },
     {
       "id": 3,
@@ -72,7 +76,8 @@ const clockList = [
       "color": "black",
       "width": "22 mm",
       "height": "13 mm",
-      "quantity": 5
+      "quantity": 5,
+      "isFeatured": false
     },
     {
       "id": 4,
@@ -97,7 +102,8 @@ const clockList = [
       "color": "green",
       "width": "20 mm",
       "height": "11 mm",
-      "quantity": 7
+      "quantity": 7,
+      "isFeatured": false
     },
     {
       "id": 5,
@@ -122,7 +128,8 @@ const clockList = [
       "color": "green",
       "width": "20 mm",
       "height": "12 mm",
-      "quantity": 9
+      "quantity": 9,
+      "isFeatured": false
     },
     {
       "id": 6,
@@ -147,12 +154,14 @@ const clockList = [
       "color": "blue",
       "width": "20 mm",
       "height": "11 mm",
-      "quantity": 6
+      "quantity": 6,
+      "isFeatured": false
     },
     {
       "id": 7,
       "code":"A103801A1L1A7",
       "location": "./media/img/p7.jpeg",
+      "featureLocation": "/media/img/p7.jpeg",
       "title": "Bambino Version 5",
       "shipping": "Free standard shipping on all orders.",
       "return": "30-day return policy for unworn items.",
@@ -172,7 +181,8 @@ const clockList = [
       "color": "brown",
       "width": "21 mm",
       "height": "11 mm",
-      "quantity": 8
+      "quantity": 3,
+      "isFeatured": true
     },
     {
       "id": 8,
@@ -197,7 +207,8 @@ const clockList = [
       "color": "black",
       "width": "24 mm",
       "height": "17 mm",
-      "quantity": 7
+      "quantity": 7,
+      "isFeatured": false
     },
     {
       "id": 9,
@@ -222,7 +233,8 @@ const clockList = [
       "color": "white",
       "width": "18 mm",
       "height": "5 mm",
-      "quantity": 9
+      "quantity": 9,
+      "isFeatured": false
     },
     {
       "id": 10,
@@ -247,7 +259,8 @@ const clockList = [
       "color": "silver",
       "width": "24 mm",
       "height": "14 mm",
-      "quantity": 6
+      "quantity": 6,
+      "isFeatured": false
     },
     {
       "id": 11,
@@ -272,12 +285,14 @@ const clockList = [
       "color": "silver",
       "width": "20 mm",
       "height": "11 mm",
-      "quantity": 8
+      "quantity": 8,
+      "isFeatured": false
     },
     {
       "id": 12,
       "code":"A103801A1L1A12",
       "location": "./media/img/p12.jpeg",
+      "featureLocation": "/media/img/p12.jpeg",
       "title": "Aquaracer Quartz",
       "shipping": "Free standard shipping on all orders.",
       "return": "30-day return policy for unworn items.",
@@ -297,7 +312,8 @@ const clockList = [
       "color": "blue",
       "width": "22 mm",
       "height": "12 mm",
-      "quantity": 7
+      "quantity": 2,
+      "isFeatured": true
     }
   ]
   export { clockList };
