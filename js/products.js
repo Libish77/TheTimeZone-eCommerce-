@@ -35,9 +35,7 @@ function attachProductClickListeners() {
 }
 // Function to handle product click
 function productDetails(event) {
-    debugger;
     const productId = event.currentTarget.dataset.productId;
-    alert(productId);
     window.location.href = `./productDetails.html?id=${productId}`;
 }
 
