@@ -41,6 +41,16 @@
 .products{
     display: contents;
 }
+
+.product-heading{
+    text-align: center;
+    font-size: 255%;
+    text-transform: uppercase;
+    padding: 1px;
+    margin-top: 1px;
+    color: yellowgreen;
+}
+
 .banner-2 img{
     display: flex;
     align-items: center;

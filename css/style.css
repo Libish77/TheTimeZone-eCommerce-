@@ -19,7 +19,7 @@ html {
   
   a {
     text-decoration: none;
-    color: var(--main);
+    color: black;
     transition: linear;
   }
   

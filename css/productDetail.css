@@ -85,9 +85,7 @@
     font-size: 1.5rem;
     font-weight: 600;
 }
-.accordion .ui-state-active{
-    background-color: greenyellow;
-}
+
 /* Media Query for Tablet Viewport */
 
 /* Adjust gallery layout for tablets to have two columns instead of three and resize font and image descriptions. */
