@@ -1,0 +1,89 @@
+/* .main-container{
+    position: relative;
+    height: auto;
+    padding: 2% 20% 2% 20%;
+}
+.about-container{
+    padding: 2% 0%;
+}
+p{
+    font-size: 2rem;
+    padding: 2% 0%;
+}
+h1{
+    font-size: 4rem;
+    padding: 2% 0%;
+}
+h2{
+    font-size: 3rem;
+    padding: 1% 0%;
+} */
+/* body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+}   */
+.about-container {
+    display: flex;
+    position: relative;
+    height: auto;
+    padding: 2% 10% 2% 10%;
+}
+
+.image-box {
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 100%;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+.text-content {
+    padding-left: 20px; 
+}
+
+.text-content h2,
+.text-content p {
+    margin: 5px; 
+}
+.main-container p, .main-container li{
+    font-size: 2rem;
+    padding: 2% 0%;
+}
+.main-container h1{
+    font-size: 4rem;
+    padding: 1% 0%;
+}
+.main-container h2{
+    font-size: 3rem;
+    padding: 1% 0%;
+}
+#webLink{
+    color: blue;
+    text-decoration: underline;
+}
+#webLink:hover{
+    color:pink;
+} 
+.ui-tabs .ui-tabs-nav li.ui-tabs-active a{
+    background-color: pink;
+}
+.ui-tabs .ui-tabs-nav li a:hover{
+    background-color: pink;
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-active {
+    border-color: pink; /* Change border color to pink */
+    border-bottom-color: transparent;
+    background-color: pink;
+}
+.ui-tabs .ui-tabs-nav, .ui-widget.ui-widget-content{
+    width: fit-content;
+}
+@media (max-width: 1199px) {
+    #zoom-image{
+      width: 100%; /* Increase image size */
+    }
+    .text-content{
+        width: 100%;
+    }
+  }

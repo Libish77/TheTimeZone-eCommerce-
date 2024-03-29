@@ -50,7 +50,28 @@
     margin-top: 1px;
     color: yellowgreen;
 }
-
+.catSection{
+    display: flex;
+    justify-content: space-between;
+}
+.category{
+  width: 40%;
+  background: whitesmoke;
+  padding: 3px;
+  margin-right:5px;
+  margin-bottom: 5px;
+}
+.filter-menu{
+  padding: 10px;
+}
+.filter-menu h3{
+  font-size: 30px;
+  color: yellowgreen;
+}
+.filter-menu ul{
+  font-size: 15px;
+  padding:3px;
+}
 .banner-2 img{
     display: flex;
     align-items: center;
