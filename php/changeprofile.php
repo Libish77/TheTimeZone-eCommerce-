@@ -1,3 +1,11 @@
+<?php 
+   session_start();
+
+   include("../php/config.php");
+   if(!isset($_SESSION['valid'])){
+    header("Location:../html/login.html");
+   }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,13 +16,13 @@
     <link rel="stylesheet"href="../css/footer.css">
     <link rel="stylesheet" href="../css/form.css">
 
-    <!-- Fontawesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+     <!-- Fontawesome Icons -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
-    <script src="../js/login.js"></script>
-    <title>Login</title>
+    <script src="../js/update.js"></script>
+    <title>Change Profile</title>
 </head>
 <body>
     <header>
@@ -27,7 +35,7 @@
             </div>
     
             <div class="logo">
-              <a href="../index.html"><h1>TheTimeZone</h1></a>
+              <a href="index.html"><h1>TheTimeZone</h1></a>
             </div>
             <div class="search-bar">
               <input type="text" placeholder="Search..">
@@ -51,7 +59,15 @@
                       <span class="cartItem"></span></i
                   ></a>
                 </li>
-                
+                <?php 
+                    if(isset($_SESSION['valid'])) {
+                ?>
+                        <li>
+                            <a href="../php/logout.php"><i class="fa-solid fa-right-from-bracket" title="Logout"></i></a>
+                        </li>
+                <?php
+                    }
+                ?>
               </ul>
     
            
@@ -80,31 +96,67 @@
           </nav>
         </div>
     </header>
-
-    <div class="form-container1">
+    <div class="container form-container1">
         <div class="form-box">
-            <h1>Login</h1>
-            <form action="../php/login.php" method="post" id="login-form">
-            <div class="field-input">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" >
-            </div>
+        <?php 
+               if(isset($_POST['submit'])){
+                $contact = $_POST['contact'];
+                $address = $_POST['address'];
+                $password = $_POST['password'];
 
-            <div class="field-input">
-                <label for="password"> Password</label>
-                <input type="password" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
-            </div>
+                $id = $_SESSION['id'];
 
-            <div class="field-input">
-                <input type="submit" class="btn" name="submit" value="Login">
-            </div>
-            <div class="links">
-                Don't have an account ? <a href="register.html">Sign Up Now</a>
-            </div>
+                $edit_query = mysqli_query($con,"UPDATE users SET Contact='$contact', Address='$address', Password='$password' WHERE Id=$id ") or die("error occurred");
+
+                if($edit_query){
+                    echo "<div class='message'>
+                    <p>Profile Updated!</p>
+                </div> <br>";
+              echo "<a href='userprofile.php'><button class='btn'>Go Home</button>";
+       
+                }
+               }else{
+
+                $id = $_SESSION['id'];
+                $query = mysqli_query($con,"SELECT*FROM users WHERE Id=$id ");
+
+                while($result = mysqli_fetch_assoc($query)){
+                    $res_Contact = $result['Contact'];
+                    $res_Address = $result['Address'];
+                    $res_Password = $result['Password'];
+                }
+
+            ?>
+            <h1>Change Profile</h1>
+            <form action="" method="post" id="edit-form">
+
+                <div class="field-input">
+                    <label for="contact">Contact</label>
+                    <input type="tel" name="contact" id="contact" autocomplete="off" value="<?php echo $res_Contact; ?>" required>
+                </div>
+
+                <div class="field-input">
+                    <label for="address">Address</label>
+                    <input type="text" name="address" id="address" autocomplete="off" value="<?php echo $res_Address; ?>" required>
+                </div>
+
+                <div class="field-input">
+                    <label for="password"> Password</label>
+                    <input type="password" name="password" id="password" autocomplete="off" value="<?php echo $res_Password; ?>" >
+                </div>
+                <div class="field-input">
+                    <label for="confirmPassword">Re-Type Password</label>
+                    <input type="password" name="confirmPassword" id="confirmPassword" >
+                </div>
+
+                <div class="field-input">
+                    <input type="submit" class="btn" name="submit" value="Update" required>
+                </div>
+                
             </form>
         </div>
+        <?php } ?>
     </div>
-    
     <footer>
         <section class="footer-links">
           <div class="location-footer">
@@ -160,3 +212,5 @@
 </body>
 </html>
 <script type="text/javascript" src="../js/script.js"></script>
+
+            

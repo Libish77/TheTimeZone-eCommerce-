@@ -1,3 +1,11 @@
+<?php 
+   session_start();
+
+   include("php/config.php");
+   if(!isset($_SESSION['valid'])){
+    header("Location: index.html");
+   }
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -42,10 +50,27 @@
             <i class="fa-solid fa-magnifying-glass search-icon"></i>
           </div>
           <div class="user-login">
+            <?php 
+                
+                $id = $_SESSION['id'];
+                $query = mysqli_query($con,"SELECT*FROM users WHERE Id=$id");
+
+                while($result = mysqli_fetch_assoc($query)){
+                    $res_Fname = $result['Firstname'];
+                    $res_Lname = $result['Lastname'];
+                    $res_Email = $result['Email'];
+                    $res_Contact = $result['Contact'];
+                    $res_dob = $result['DOB'];
+                    $res_address = $result['Address'];
+                    $res_gender = $result['Gender'];
+                    $res_id = $result['Id'];
+                }
+                
+                ?>
             <ul>
               <li>
-                <a href="./html/login.html">
-                  <span id="#show-option" class="username"></span>
+                <a href="php/userprofile.php">
+                  <span id="#show-option" class="username">Welcome <?php echo $res_Fname ?></span>
                   <i class="fa-solid fa-user" title="Profile/Login"></i
                 ></a>
               </li>
@@ -59,6 +84,15 @@
                     <span class="cartItem"></span></i
                 ></a>
               </li>
+              <?php 
+                    if(isset($_SESSION['valid'])) {
+                ?>
+                        <li>
+                            <a href="php/logout.php"><i class="fa-solid fa-right-from-bracket" title="Logout"></i></a>
+                        </li>
+                <?php
+                    }
+                ?>
             </ul>
   
          
