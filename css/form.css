@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
+.form-container1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+}
+
+.form-box{
+    background: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 25px;
+    border-radius: 20px;
+    box-shadow: 0 0  128px 0 rgba(0,0,0,0.1),
+                0 32px 64px -48px rgba(0,0,0,0.5);
+}
+
+.form-box{
+    width: 100px;
+    max-width: 500px;
+    margin: 0px 10px;
+}
+
+.form-box h1{
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 10px;
+}
+
+.form-box form .field-input{
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: column;
+    font-size: 16px;
+}
+.form-box form .field-input input{
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.field-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.field-group .field-input {
+    flex-basis: 48%; /* Adjust width of fields as needed */
+}
+
+
+.btn{
+    height: 35px;
+    background: rgba(76,68,182,0.808);
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all .3s;
+    margin-top: 10px;
+    padding: 0px 10px;
+    text-decoration: none;
+}
+.btn:hover{
+    opacity: 0.82;
+}
+.submit{
+    width: 100%;
+}
+.links{
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.error {
+    color: red; /* Set error message color to red */
+    font-size: 14px; /* Set font size for error messages */
+    margin-top: 5px; /* Add some margin to separate error messages from inputs */
+}
+
+
+
+
+.main-box{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.box {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 48%; /* Adjust width as needed */
+    display: inline-block; /* Display boxes side by side */
+    vertical-align: top; /* Align boxes to the top */
+}
+
+.box label {
+    font-weight: bold;
+}
+
+.box .info {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    pointer-events: none; /* Make text non-selectable */
+    word-wrap: break-word; /* Allow long words to wrap */
+    overflow-wrap: break-word; /* Allow line breaks within words */
+}
+
+/* .btn {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+} */
+
+/* .button-container {
+    text-align: center; 
+    margin-top: 20px; 
+} */
+
+.button-container {
+    display: flex; /* Use flexbox for positioning */
+    justify-content: center; /* Center buttons horizontally */
+    margin-top: 20px; /* Adjust margin as needed */
+}
+
+.button-container .btn {
+    margin-right: 10px; /* Adjust spacing between buttons */
+}
+
+
+/* Small Screens (up to 767px) */
+@media (max-width: 767px) {
+    .form-box {
+        width: 100%;
+        padding: 20px;
+        overflow: hidden;
+    }
+
+    .field-group {
+        flex-direction: column;
+    }
+
+    .field-group .field-input {
+        flex-basis: auto;
+        width: 100%;
+    }
+
+    select {
+        font-size: 14px; /* Reduce font size */
+        padding: 8px; /* Adjust padding */
+    }
+}
+
+/* Medium Screens (768px to 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .form-box {
+        width: 80%;
+    }
+}
+
+/* Large Screens (1024px and above) */
+@media (min-width: 1024px) {
+    .form-box {
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width:840px){
+    .main-box .top{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .box {
+        width: 100%; /* Make boxes full width */
+        display: block; /* Display boxes stacked */
+    }
+    .button-container {
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: center; /* Center buttons vertically */
+    }
+
+    .button-container .btn {
+        margin: 5px 0; /* Add margin to separate vertically stacked buttons */
+    }
+}
+
+
+
+
+.message{
+    text-align: center;
+    background: #f9eded;
+    padding: 15px 0px;
+    border:1px solid #699053;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: red;
+}
