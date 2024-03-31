@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home - TheTimeZone</title>
-    
-    <link rel="stylesheet"href="css/style.css">
 
+    <!--css linked-->
+    <link rel="stylesheet"href="css/style.css">
     <link rel="stylesheet"href="css/header.css">
     <link rel="stylesheet"href="css/slider.css">
     <link rel="stylesheet"href="css/index.css">
@@ -19,10 +19,17 @@
 
       <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
       <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" rel="stylesheet" type="text/css">
-  </head>
 
-    
-    
+      
+      <!--cdn for jquery-->
+      <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+      <!--script for a slider(jquery plugins)-->
+      <script type="text/javascript" src="lib/jquery.kaibanner.js"></script>
+      <script type="text/javascript" src="js/slider.js"></script>
+
+      <script type="text/javascript" src="js/script.js"></script>
+      <script type="module" src="js/index.js"></script>
+  </head>
   <body>
     <!-- header starts here -->
     <header>
@@ -44,7 +51,7 @@
           <div class="user-login">
             <ul>
               <li>
-                <a href="./html/login.html">
+                <a class="userIcon">
                   <span id="#show-option" class="username"></span>
                   <i class="fa-solid fa-user" title="Profile/Login"></i
                 ></a>
@@ -59,6 +66,9 @@
                     <span class="cartItem"></span></i
                 ></a>
               </li>
+              <li class="logout">
+                <a href="php/logout.php"><i class="fa-solid fa-right-from-bracket" title="Logout"></i></a>
+             </li>
             </ul>
   
          
@@ -80,7 +90,7 @@
                 <a href="html/blog.html">Blogs</a>
               </li>
               <li>
-                Products
+                <a href="html/contactus.html">Contact us</a>
               </li>
             </ul>
           </div>
@@ -221,9 +231,5 @@
     <!-- Footer ends here-->
   </body>
 </html>
-<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-<script type="text/javascript" src="lib/jquery.kaibanner.js"></script>
-<script type="text/javascript" src="js/slider.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
-<script type="module" src="js/index.js"></script>
+
 

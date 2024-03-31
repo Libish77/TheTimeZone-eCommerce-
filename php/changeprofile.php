@@ -22,80 +22,79 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
     <script src="../js/update.js"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
     <title>Change Profile</title>
 </head>
 <body>
-    <header>
-        <div class="container">
-          <div class="header-first">
-            <div class="hamburger-menu" id="hamburgerMenu">
-              <div class="bar"></div>
-              <div class="bar"></div>
-              <div class="bar"></div>
-            </div>
     
-            <div class="logo">
-              <a href="index.html"><h1>TheTimeZone</h1></a>
-            </div>
-            <div class="search-bar">
-              <input type="text" placeholder="Search..">
-              <i class="fa-solid fa-magnifying-glass search-icon"></i>
-            </div>
-            <div class="user-login">
-              <ul>
-                <li>
-                  <a href="#">
-                    <span id="#show-option" class="username"></span>
-                    <i class="fa-solid fa-user" title="Profile/Login"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="#"
-                    ><i
-                      id="#show-option"
-                      class="fa-solid fa-bag-shopping shopCart"
-                      title="Your Cart"
-                    >
-                      <span class="cartItem"></span></i
-                  ></a>
-                </li>
-                <?php 
-                    if(isset($_SESSION['valid'])) {
-                ?>
-                        <li>
-                            <a href="../php/logout.php"><i class="fa-solid fa-right-from-bracket" title="Logout"></i></a>
-                        </li>
-                <?php
-                    }
-                ?>
-              </ul>
-    
-           
-            </div>
+     <!-- header starts here -->
+     <header>
+      <div class="container">
+        <div class="header-first">
+          <div class="hamburger-menu" id="hamburgerMenu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+  
+          <div class="logo">
+            <a href="../index.html"><h1>TheTimeZone</h1></a>
+          </div>
+          <div class="search-bar">
+            <input type="text" placeholder="Search..">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          </div>
+          <div class="user-login">
+            <ul>
+              <li>
+                <a class="userIcon">
+                  <span id="#show-option" class="username"></span>
+                  <i class="fa-solid fa-user" title="Profile/Login"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i
+                    id="#show-option"
+                    class="fa-solid fa-bag-shopping shopCart"
+                    title="Your Cart"
+                  >
+                    <span class="cartItem"></span></i
+                ></a>
+              </li>
+              <li class="logout">
+                <a href="../php/logout.php"><i class="fa-solid fa-right-from-bracket" title="Logout"></i></a>
+             </li>
+            </ul>
+  
+         
           </div>
         </div>
-    
-        <div class="header-second">
-          <nav>
-            <div class="container nav-bar">
-              <ul>
-                <li>
-                  <a href="html/products.html">Products</a>
-                </li>
-                <li>
-                  <a href="html/aboutUs.html">About us</a>
-                </li>
-                <li>
-                  <a href="html/blog.html">Blogs</a>
-                </li>
-                <li>
-                  Products
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </div>
+      </div>
+  
+      <div class="header-second">
+        <nav>
+          <div class="container nav-bar">
+            <ul>
+              <li>
+                <a href="../html/products.html">Products</a>
+              </li>
+              <li>
+                <a href="../html/aboutUs.html">About us</a>
+              </li>
+              <li>
+                <a href="../html/blog.html">Blogs</a>
+              </li>
+              <li>
+                <a href="../html/blog.html">Blogs</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
+    <!-- header ends here -->
+
     <div class="container form-container1">
         <div class="form-box">
         <?php 
@@ -211,6 +210,5 @@
       <!-- Footer ends here-->
 </body>
 </html>
-<script type="text/javascript" src="../js/script.js"></script>
 
             

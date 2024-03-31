@@ -246,7 +246,7 @@ header {
   
     .user-login .username {
       position: absolute;
-      top: -22px;
+      top: 37px;
       left: -22px;
       z-index: 1000000;
     }

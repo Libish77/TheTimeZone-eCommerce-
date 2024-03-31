@@ -4,17 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TheTimeZone Blog</title>
+
+       <!--css linked-->
   <link rel="stylesheet" href="../css/blog.css">
   <link rel="stylesheet"href="../css/header.css">
   <link rel="stylesheet"href="../css/style.css">
   <link rel="stylesheet"href="../css/footer.css">
-  <link rel="stylesheet"href="../css/slider.css">
+
+   <!-- Fontawesome Icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+<!--reqired scripts here-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script> 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="../js/blog.js"></script>
+<script type="text/javascript" src="../js/script.js"></script>
 </head>
 <body>
+  <!-- header starts here -->
   <header>
     <div class="container">
       <div class="header-first">
@@ -34,7 +43,7 @@
         <div class="user-login">
           <ul>
             <li>
-              <a href="./html/profile.php">
+              <a class="userIcon">
                 <span id="#show-option" class="username"></span>
                 <i class="fa-solid fa-user" title="Profile/Login"></i
               ></a>
@@ -49,6 +58,9 @@
                   <span class="cartItem"></span></i
               ></a>
             </li>
+            <li class="logout">
+              <a href="../php/logout.php"><i class="fa-solid fa-right-from-bracket" title="Logout"></i></a>
+           </li>
           </ul>
 
        
@@ -67,16 +79,18 @@
               <a href="../html/aboutUs.html">About us</a>
             </li>
             <li>
-              <a href="../html/blog.html">Blogs</a>
+              <a href="#">Blogs</a>
             </li>
             <li>
-              Products
+              <a href="../html/contactus.html">Contact us</a>
             </li>
           </ul>
         </div>
       </nav>
     </div>
   </header>
+  <!-- header ends here -->
+  <!--main starts here-->
   <main style="font-size: medium;">
     <div class="blog-container" style="margin-bottom:20px">
       <h1 style="margin-bottom:20px">TheTimeZone Blog - <span class="typed-text"></span></h1>
@@ -115,6 +129,8 @@
       </section>
     </div>
   </main>
+  <!--main ends here-->
+  <!--footer starts here-->
   <footer>
     <section class="footer-links">
       <div class="location-footer">
@@ -166,7 +182,7 @@
       </div>
     </section>
   </footer>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="../js/blog.js"></script>
+  <!--footer ends here-->
+  
 </body>
 </html>

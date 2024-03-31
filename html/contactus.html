@@ -3,34 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Details - TheTimeZone</title>
-
-     <!--css linked-->
+    <title>Home - TheTimeZone</title>
     <link rel="stylesheet"href="../css/style.css">
     <link rel="stylesheet"href="../css/header.css">
     <link rel="stylesheet"href="../css/footer.css">
-    <link rel="stylesheet"href="../css/productDetail.css">
-
-    <!-- Jquery widget Accordion (theme roller) -->
-    <link rel="stylesheet" href="../css/theme.css">
+    <link rel="stylesheet" href="../css/contactus.css">
 
     <!-- Fontawesome Icons -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-      
-       <!--cdn for jquery-->
-      <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+      <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
-      <!--rendering required javascript for product details pages-->
-      <script type="module" src="../js/productDetail.js"></script>
-      <script type="text/javascript" src="../js/script.js"></script>
-      
-      <!-- script for jquery ui accordion(theme roller) -->
-      <script src="../js/theme.js"></script>
+
+
+
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
       <script>
-        $( function() {
-          $( "#accordion" ).accordion();
-        } );
-      </script>
+            $(document).ready(function() {
+              // Get today's date
+              var today = new Date();
+          
+              // Date picker widget
+              $("#datepicker").datepicker({
+                  dateFormat: "yy-mm-dd", // Set date format if needed
+                  minDate: today // Set minDate to today's date
+              });
+          
+              // Autocomplete widget
+              var availableTags = ["Product Inquiry", "Order Issue", "Technical Support", "Feedback", "Other"];
+              $("#subject").autocomplete({
+                  source: availableTags
+              });
+          
+              // Spinner widget for priority
+              $("#priority").spinner();
+            });
+        </script>
   </head>
 
     
@@ -95,7 +103,7 @@
                 <a href="../html/blog.html">Blogs</a>
               </li>
               <li>
-                <a href="../html/contactus.html">Contact us</a>
+                <a href="#">Contact us</a>
               </li>
             </ul>
           </div>
@@ -104,65 +112,81 @@
     </header>
     <!-- header ends here -->
 
-    <!-- main starts here -->
-    <main class="content-wrapper">
+    <!--Main-->
+    <div class="container main_conrainer">
+        <h1>Contact Us</h1>
+        <form action="../index.html" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required minlength="3" maxlength="20">
+            <label for="email">Email:</label> 
+            <input type="email" id="email" name="email" required>
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required minlength="10" maxlength="2000"></textarea>
+            <label for="datepicker">Best Day To Reach Out:</label>
+            <input type="date" id="datepicker" name="date">
+            <label for="priority">Priority:</label>
+            <input type="number" id="priority" name="priority" min="1" max="10" value="5">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
 
-      <!-- Dynamic contents from javascript loads here -->
-     
-    </main>
-    <!-- main ends here -->
+    
+    <!--Main ends-->
     <!-- Footer starts here-->
     <footer>
-        <section class="footer-links">
+      <section class="footer-links">
         <div class="location-footer">
-            <h2>Location</h2>
-            <ul>
+          <h2>Location</h2>
+          <ul>
             <li><a href="#">USA</a></li>
             <li><a href="#">CANADA</a></li>
             <li><a href="#">NEPAL</a></li>
             <li></li>
-            </ul>
+          </ul>
         </div>
 
         <div class="shop-footer">
-            <h2>SHOP</h2>
-            <ul>
+          <h2>SHOP</h2>
+          <ul>
             <li><a href="#">Collections</a></li>
             <li><a href="#">Men</a></li>
             <li><a href="#">Women</a></li>
             <li><a href="#">New</a></li>
-            </ul>
+          </ul>
         </div>
 
         <div class="customer-footer">
-            <h2>CUSTOMER SERVICE</h2>
-            <ul>
+          <h2>CUSTOMER SERVICE</h2>
+          <ul>
             <li><a href="#">My Account</a></li>
             <li><a href="#">Shipping</a></li>
             <li><a href="#">Returns</a></li>
             <li><a href="#">FAQ</a></li>
             <li><a href="#">Contact Us</a></li>
-            </ul>
+          </ul>
         </div>
 
         <div class="social-link">
-            <ul>
+          <ul>
             <li>
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
             </li>
             <li>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
             </li>
             <li>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
             </li>
             <li>
-                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
             </li>
-            </ul>
+          </ul>
         </div>
-        </section>
+      </section>
     </footer>
     <!-- Footer ends here-->
-</body>
+  </body>
 </html>
+

@@ -51,7 +51,8 @@ const clockList = [
       "width": "20 mm",
       "height": "12 mm",
       "quantity": 1,
-      "isFeatured": true
+      "isFeatured": true,
+      "gender": "male"
     },
     {
       "id": 3,
@@ -77,7 +78,8 @@ const clockList = [
       "width": "22 mm",
       "height": "13 mm",
       "quantity": 5,
-      "isFeatured": false
+      "isFeatured": false,
+      "gender": "male"
     },
     {
       "id": 4,
@@ -103,7 +105,8 @@ const clockList = [
       "width": "20 mm",
       "height": "11 mm",
       "quantity": 7,
-      "isFeatured": false
+      "isFeatured": false,
+      "gender": "female"
     },
     {
       "id": 5,
@@ -129,7 +132,8 @@ const clockList = [
       "width": "20 mm",
       "height": "12 mm",
       "quantity": 9,
-      "isFeatured": false
+      "isFeatured": false,
+      "gender": "male"
     },
     {
       "id": 6,
@@ -155,7 +159,8 @@ const clockList = [
       "width": "20 mm",
       "height": "11 mm",
       "quantity": 6,
-      "isFeatured": false
+      "isFeatured": false,
+      "gender": "female"
     },
     {
       "id": 7,
@@ -182,7 +187,8 @@ const clockList = [
       "width": "21 mm",
       "height": "11 mm",
       "quantity": 3,
-      "isFeatured": true
+      "isFeatured": true,
+      "gender": "female"
     },
     {
       "id": 8,
@@ -208,7 +214,8 @@ const clockList = [
       "width": "24 mm",
       "height": "17 mm",
       "quantity": 7,
-      "isFeatured": false
+      "isFeatured": false,
+      "gender": "female"
     },
     {
       "id": 9,
@@ -234,7 +241,8 @@ const clockList = [
       "width": "18 mm",
       "height": "5 mm",
       "quantity": 9,
-      "isFeatured": false
+      "isFeatured": false,
+      "gender": "female"
     },
     {
       "id": 10,
@@ -260,7 +268,8 @@ const clockList = [
       "width": "24 mm",
       "height": "14 mm",
       "quantity": 6,
-      "isFeatured": false
+      "isFeatured": false,
+      "gender": "male"
     },
     {
       "id": 11,
@@ -286,7 +295,8 @@ const clockList = [
       "width": "20 mm",
       "height": "11 mm",
       "quantity": 8,
-      "isFeatured": false
+      "isFeatured": false,
+      "gender": "female"
     },
     {
       "id": 12,
@@ -313,7 +323,8 @@ const clockList = [
       "width": "22 mm",
       "height": "12 mm",
       "quantity": 2,
-      "isFeatured": true
+      "isFeatured": true,
+      "gender": "female"
     }
   ]
   export { clockList };

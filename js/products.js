@@ -39,5 +39,23 @@ function productDetails(event) {
     window.location.href = `./productDetails.html?id=${productId}`;
 }
 
-// calling a function renderAllProducts when page load
-renderAllProducts();
+
+ // Function to render produt with filter
+ function renderProductGenderFilter(val) {
+  prod.innerHTML = "";
+  clockList.filter(obj => obj.gender == val).forEach((product) => {
+    prod.insertAdjacentHTML("beforeend", renderProduct(product));
+  });
+  attachProductClickListeners();
+}
+
+$(document).ready(function () {
+ // calling a function renderAllProducts with gender filter when page load
+  renderAllProducts();
+});
+
+// filter the products as per gender
+$('input[type="radio"]').on('click change', function(e) {
+  var val = this.defaultValue;
+  renderProductGenderFilter(val);
+});
